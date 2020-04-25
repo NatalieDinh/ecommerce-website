@@ -99,7 +99,7 @@ class ProductProvider extends Component{
 
 		if(product.count === 0)
 			this.removeItem(id);
-		else {
+			else {
 			product.total = product.count * product.price;
 			this.setState(() =>{
 				return {cart:[...tempCart]}
